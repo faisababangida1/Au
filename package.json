@@ -1,0 +1,16 @@
+{
+  "name": "mobile-agent-orchestrator",
+  "version": "1.0.0",
+  "description": "AI Brain for Android Automation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
+  }
+}
