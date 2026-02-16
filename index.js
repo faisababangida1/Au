@@ -76,8 +76,8 @@ app.get('/', (req, res) => {
     res.send('Agent Orchestrator is online.');
 });
 
+// FIX: Binding explicitly to 0.0.0.0 so Railway can route traffic correctly
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`🚀 Mobile Agent Brain is running on port ${PORT}`);
 });
-  
